@@ -1,0 +1,112 @@
+
+
+>code –> Universal
+>Loaded a multiple sequence alignment with **8** sequences, **1785** codons, and **1** partitions from `/projects/kernlab/mdriskil/transcript_gap_alignments/OG0004711.fa`
+
+>test –> Test
+The number of points in the initial distributional guess for likelihood fitting (permissible range = [1,10000], default value = 250, integer): 
+>grid-size –> 250
+The number of initial random guesses to 'seed' rate values optimization (permissible range = [1,25], default value = 1, integer): 
+>starting-points –> 1
+
+
+### Branch sets for RELAX analysis
+
+>multiple-hits –> None
+* Selected 12 branches as the _Reference_ set: `mouse, human, o_bimac, o_sin, s_phar, Node6, a_cal, c_gigas, Node11, Node5, fly, Node4`
+* Selected 1 branches as the _Test_ set: `Node7`
+The number omega rate classes to include in the model (permissible range = [2,10], default value = 3, integer): 
+>rates –> 3
+
+>models –> All
+
+>srv –> No
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths –> Yes
+* Log(L) = -27983.83, AIC-c = 56009.67 (21 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  3.237
+
+### Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases
+* Log(L) = -27001.41, AIC-c = 54060.93 (29 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  4.291
+* non-synonymous/synonymous rate ratio for *Reference* =   0.2509
+* non-synonymous/synonymous rate ratio for *Test* =   0.2165
+
+### Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model
+* Log(L) = -26929.56, AIC-c = 53917.25 (29 estimated parameters)
+* non-synonymous/synonymous rate ratio for *Reference* =   0.1915
+* non-synonymous/synonymous rate ratio for *Test* =   0.1023
+
+### Fitting the general descriptive (separate k per branch) model
+
+### * Log(L) = -26684.56, AIC-c = 53459.41 (45 estimated parameters)
+* The following baseline rate distribution for branch-site combinations was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.001     |   60.836    |                                   |
+|        Negative selection         |     0.162     |   34.798    |                                   |
+|      Diversifying selection       |    21.608     |    4.366    |                                   |
+
+* Branch-level relaxation or intensification parameter distribution has mean  0.65, median  0.60, and 95% of the weight in  0.15 -  1.51
+
+### Fitting the alternative model to test K != 1
+* Log(L) = -26697.64, AIC-c = 53461.44 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.12
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.006     |   59.347    |                                   |
+|        Negative selection         |     0.297     |   35.013    |                                   |
+|      Diversifying selection       |     5.084     |    5.639    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.010     |   59.347    |                                   |
+|        Negative selection         |     0.337     |   35.013    |                                   |
+|      Diversifying selection       |     4.291     |    5.639    |                                   |
+
+
+### * Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+
+### Fitting the null (K := 1) model
+* Log(L) = -26697.78, AIC-c = 53459.71 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.010     |   59.480    |                                   |
+|        Negative selection         |     0.324     |   34.659    |                                   |
+|      Diversifying selection       |     4.174     |    5.861    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   0.5993**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+
+### Fitting the partitioned descriptive model (completely separate rate distributions for branch sets)
+* Log(L) = -26697.35, AIC-c = 53468.89 (37 estimated parameters)
+* The following rate distribution was inferred for *test* branches 
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.014     |   60.866    |                                   |
+|        Negative selection         |     0.296     |   33.222    |                                   |
+|      Diversifying selection       |    258.883    |    5.912    |                                   |
+
+* The following rate distribution was inferred for *reference* branches 
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.010     |   59.448    |                                   |
+|        Negative selection         |     0.331     |   34.619    |                                   |
+|      Diversifying selection       |     4.096     |    5.932    |                                   |
+
