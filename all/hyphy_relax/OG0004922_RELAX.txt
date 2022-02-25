@@ -1,0 +1,341 @@
+
+
+>code –> Universal
+>Loaded a multiple sequence alignment with **8** sequences, **826** codons, and **1** partitions from `/projects/kernlab/mdriskil/transcript_gap_alignments/OG0004922.fa`
+
+>test –> Test
+The number of points in the initial distributional guess for likelihood fitting (permissible range = [1,10000], default value = 250, integer): 
+>grid-size –> 250
+The number of initial random guesses to 'seed' rate values optimization (permissible range = [1,25], default value = 1, integer): 
+>starting-points –> 1
+
+
+### Branch sets for RELAX analysis
+
+>multiple-hits –> None
+* Selected 12 branches as the _Reference_ set: `mouse, human, o_bimac, o_sin, s_phar, Node6, a_cal, c_gigas, Node11, Node5, fly, Node4`
+* Selected 1 branches as the _Test_ set: `Node7`
+The number omega rate classes to include in the model (permissible range = [2,10], default value = 3, integer): 
+>rates –> 3
+
+>models –> All
+
+>srv –> No
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths –> Yes
+* Log(L) = -12796.37, AIC-c = 25634.78 (21 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  2.832
+
+### Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases
+* Log(L) = -12110.49, AIC-c = 24279.25 (29 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  4.996
+* non-synonymous/synonymous rate ratio for *Reference* =   0.1395
+* non-synonymous/synonymous rate ratio for *Test* =   0.0611
+
+### Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model
+* Log(L) = -12019.51, AIC-c = 24097.28 (29 estimated parameters)
+* non-synonymous/synonymous rate ratio for *Reference* =   0.0392
+* non-synonymous/synonymous rate ratio for *Test* =   0.0875
+
+### Fitting the general descriptive (separate k per branch) model
+
+### * Log(L) = -11864.64, AIC-c = 23819.91 (45 estimated parameters)
+* The following baseline rate distribution for branch-site combinations was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.000     |   71.009    |                                   |
+|        Negative selection         |     0.024     |   28.319    |                                   |
+|      Diversifying selection       |    147.779    |    0.672    |                                   |
+
+* Branch-level relaxation or intensification parameter distribution has mean  0.38, median  0.35, and 95% of the weight in  0.03 -  0.64
+
+### Fitting the alternative model to test K != 1
+* Log(L) = -11864.62, AIC-c = 23795.59 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.03
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.331    |                                   |
+|        Negative selection         |     0.107     |   26.109    |                                   |
+|         Neutral evolution         |     1.000     |    3.560    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.331    |                                   |
+|        Negative selection         |     0.114     |   26.109    |                                   |
+|         Neutral evolution         |     1.000     |    3.560    |                                   |
+
+
+### * Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+
+### Potential for highly unreliable K inference due to multiple local maxima in the likelihood function, treat results with caution 
+> Relaxation parameter reset to opposite mode of evolution from that obtained in the initial optimization.
+* Log(L) = -11864.58, AIC-c = 23795.51 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.00
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.304    |                                   |
+|        Negative selection         |     0.113     |   26.201    |                                   |
+|         Neutral evolution         |     1.000     |    3.495    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.304    |                                   |
+|        Negative selection         |     0.113     |   26.201    |                                   |
+|         Neutral evolution         |     1.000     |    3.495    |                                   |
+
+
+### Fitting the null (K := 1) model
+* Log(L) = -11864.57, AIC-c = 23793.45 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.250    |                                   |
+|        Negative selection         |     0.112     |   26.238    |                                   |
+|         Neutral evolution         |     1.000     |    3.511    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   1.0000**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+
+### * Detected convergence issues (negative LRT). Refitting the alterative/null model pair from a new starting point
+* Log(L) = -11864.54, AIC-c = 23795.43 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.02
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.143    |                                   |
+|        Negative selection         |     0.107     |   26.287    |                                   |
+|         Neutral evolution         |     1.000     |    3.570    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.143    |                                   |
+|        Negative selection         |     0.112     |   26.287    |                                   |
+|         Neutral evolution         |     1.000     |    3.570    |                                   |
+
+* Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+
+### Potential for highly unreliable K inference due to multiple local maxima in the likelihood function, treat results with caution 
+> Relaxation parameter reset to opposite mode of evolution from that obtained in the initial optimization.
+* Log(L) = -11864.53, AIC-c = 23795.41 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.00
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.143    |                                   |
+|        Negative selection         |     0.111     |   26.313    |                                   |
+|         Neutral evolution         |     1.000     |    3.544    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.143    |                                   |
+|        Negative selection         |     0.111     |   26.313    |                                   |
+|         Neutral evolution         |     1.000     |    3.544    |                                   |
+
+Fitting the null (K := 1) model
+* Log(L) = -11864.51, AIC-c = 23793.34 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.143    |                                   |
+|        Negative selection         |     0.111     |   26.303    |                                   |
+|         Neutral evolution         |     1.000     |    3.554    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   1.0000**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+* Detected convergence issues (negative LRT). Refitting the alterative/null model pair from a new starting point
+* Log(L) = -11864.49, AIC-c = 23795.33 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.02
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.090    |                                   |
+|        Negative selection         |     0.107     |   26.324    |                                   |
+|         Neutral evolution         |     1.000     |    3.587    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.090    |                                   |
+|        Negative selection         |     0.111     |   26.324    |                                   |
+|         Neutral evolution         |     1.000     |    3.587    |                                   |
+
+* Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+
+### Potential for highly unreliable K inference due to multiple local maxima in the likelihood function, treat results with caution 
+> Relaxation parameter reset to opposite mode of evolution from that obtained in the initial optimization.
+* Log(L) = -11864.49, AIC-c = 23795.31 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.00
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.063    |                                   |
+|        Negative selection         |     0.109     |   26.374    |                                   |
+|         Neutral evolution         |     1.000     |    3.564    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.063    |                                   |
+|        Negative selection         |     0.109     |   26.374    |                                   |
+|         Neutral evolution         |     1.000     |    3.564    |                                   |
+
+Fitting the null (K := 1) model
+* Log(L) = -11864.47, AIC-c = 23793.27 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.036    |                                   |
+|        Negative selection         |     0.109     |   26.397    |                                   |
+|         Neutral evolution         |     1.000     |    3.567    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   1.0000**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+* Detected convergence issues (negative LRT). Refitting the alterative/null model pair from a new starting point
+* Log(L) = -11864.47, AIC-c = 23795.28 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.01
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.009    |                                   |
+|        Negative selection         |     0.106     |   26.390    |                                   |
+|         Neutral evolution         |     1.000     |    3.600    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.009    |                                   |
+|        Negative selection         |     0.109     |   26.390    |                                   |
+|         Neutral evolution         |     1.000     |    3.600    |                                   |
+
+* Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+
+### Potential for highly unreliable K inference due to multiple local maxima in the likelihood function, treat results with caution 
+> Relaxation parameter reset to opposite mode of evolution from that obtained in the initial optimization.
+* Log(L) = -11864.46, AIC-c = 23795.27 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.00
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.009    |                                   |
+|        Negative selection         |     0.109     |   26.407    |                                   |
+|         Neutral evolution         |     1.000     |    3.584    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.009    |                                   |
+|        Negative selection         |     0.109     |   26.407    |                                   |
+|         Neutral evolution         |     1.000     |    3.584    |                                   |
+
+Fitting the null (K := 1) model
+* Log(L) = -11864.46, AIC-c = 23793.25 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.009    |                                   |
+|        Negative selection         |     0.109     |   26.407    |                                   |
+|         Neutral evolution         |     1.000     |    3.584    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   1.0000**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+* Detected convergence issues (negative LRT). Refitting the alterative/null model pair from a new starting point
+* Log(L) = -11864.46, AIC-c = 23795.26 (33 estimated parameters)
+* Relaxation/intensification parameter (K) =     1.01
+* The following rate distribution was inferred for **test** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   69.983    |                                   |
+|        Negative selection         |     0.106     |   26.420    |                                   |
+|         Neutral evolution         |     1.000     |    3.597    |                                   |
+
+* The following rate distribution was inferred for **reference** branches
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   69.983    |                                   |
+|        Negative selection         |     0.109     |   26.420    |                                   |
+|         Neutral evolution         |     1.000     |    3.597    |                                   |
+
+* Potential convergence issues due to flat likelihood surfaces; checking to see whether K > 1 or K < 1 is robustly inferred
+Fitting the null (K := 1) model
+* Log(L) = -11864.46, AIC-c = 23793.25 (32 estimated parameters)
+* The following rate distribution for test/reference branches was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   69.983    |                                   |
+|        Negative selection         |     0.109     |   26.447    |                                   |
+|         Neutral evolution         |     1.000     |    3.571    |                                   |
+
+----
+## Test for relaxation (or intensification) of selection [RELAX]
+Likelihood ratio test **p =   0.9440**.
+>No significant evidence for relaxation (or intensification) of selection among **test** branches _relative_ to the **reference** branches at P<=0.05
+----
+
+
+### Fitting the partitioned descriptive model (completely separate rate distributions for branch sets)
+* Log(L) = -11858.37, AIC-c = 23791.16 (37 estimated parameters)
+* The following rate distribution was inferred for *test* branches 
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.003     |   63.613    |                                   |
+|        Negative selection         |     0.042     |   27.029    |                                   |
+|      Diversifying selection       |     2.127     |    9.357    |                                   |
+
+* The following rate distribution was inferred for *reference* branches 
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.002     |   70.208    |                                   |
+|        Negative selection         |     0.133     |   29.792    |                                   |
+|      Diversifying selection       |     1.001     |    0.000    |       Not supported by data       |
+
