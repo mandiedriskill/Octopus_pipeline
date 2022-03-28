@@ -1,0 +1,54 @@
+
+Analysis Description
+--------------------
+Perform a Fast Unbiased AppRoximate Bayesian (FUBAR) analysis of a
+coding sequence alignment to determine whether some sites have been
+subject to pervasive purifying or diversifying selection. v2.1
+introduces two more methods for estimating the posterior distribution of
+grid weights: collapsed Gibbs MCMC (faster) and 0-th order Variation
+Bayes approximation (fastest). Please note that a FUBAR analysis
+generates a cache and a results JSON file in the same directory as
+directory as the original alignment. HyPhy needs to have write
+privileges to this directory. For example if the original file is in
+/home/sergei/FUBAR/data/pol.nex then at the end of a FUBAR run, there
+will also exist FUBAR-generated files
+/home/sergei/FUBAR/data/pol.nex.FUBAR.json,
+/home/sergei/FUBAR/data/pol.nex.fubrar.cache. They also provide
+checkpointing so that a partially completed analysis can be restarted.
+
+- __Requirements__: in-frame codon alignment (possibly partitioned) and a phylogenetic tree
+(one per partition)
+
+- __Citation__: FUBAR: a fast, unconstrained bayesian approximation for inferring
+selection (2013), Mol Biol Evol. 30(5):1196-205
+
+- __Written by__: Sergei L Kosakovsky Pond
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 2.2
+
+
+>code –> Universal
+>Loaded a multiple sequence alignment with **8** sequences, **362** codons, and **1** partitions from `/projects/kernlab/mdriskil/transcript_gap_alignments/OG0004707.fa`
+Save FUBAR cache to : 
+>cache –> /projects/kernlab/mdriskil/transcript_gap_alignments/OG0004707.fa.FUBAR.cache
+> FUBAR will write cache and result files to _/projects/kernlab/mdriskil/transcript_gap_alignments/OG0004707.fa.FUBAR.cache_ and _/projects/kernlab/mdriskil/transcript_gap_alignments/OG0004707.fa.FUBAR.json_, respectively 
+
+
+
+
+### _Loaded cached GTR fit_ Log(L) = -7668.28, AIC-c = 15378.88 (21 estimated parameters)
+* Tree length (expected substitutions/site) for partition 1 :    2.607
+
+### _Loaded cached phylogenetic likelihood function on the grid_ of dimension 20x20 points
+
+### _Loaded cached estimated posterior probabilities on the grid
+
+### Tabulating site-level results
+|     Codon      |   Partition    |     alpha      |      beta      |Posterior prob for positive selection|
+|:--------------:|:--------------:|:--------------:|:--------------:|:-----------------------------------:|
+|      303       |       1        |        2.012   |       19.015   |       Pos. posterior = 0.9342       |
+----
+## FUBAR inferred 1 sites subject to diversifying positive selection at posterior probability >= 0.9
+Of these,  0.07 are expected to be false positives (95% confidence interval of 0-1 )
